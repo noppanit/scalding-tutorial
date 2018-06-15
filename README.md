@@ -11,6 +11,7 @@ This documentation won't explain anything about Scalding since the [Wiki](https:
 2. Install sbt `brew install sbt`
 3. `git clone https://github.com/noppanit/scalding-tutorial.git`
 4. Install Java 8
+5. Install Hadoop `brew install hadoop`
 
 
 ## How to get started with Intellij
@@ -33,4 +34,13 @@ Your `Edit Configurations` should look like this
 You can try and click `Run` It should spits out the word count of Alice in Wonder Land in folder `target/data/output0.txt`
 
 Have fun!
+
+## Run from Command line
+
+1. Run `sbt clean assembly`
+2. Run `yarn jar target/scala-2.12/scalding-tutorial-assembly-0.1.jar com.twitter.scalding.Tool FirstJob --local`
+
+
+## Reference
+1. https://medium.com/@gayani.nan/how-to-run-a-scalding-job-567160fa193
 
